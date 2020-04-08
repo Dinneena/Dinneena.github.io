@@ -7,7 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-html, body, div, span, applet, object,
+html, body, div, span, applet, object
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
@@ -140,7 +140,6 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		border-bottom: dotted 1px;
 		color: inherit;
 		text-decoration: none;
 	}
@@ -2078,15 +2077,28 @@ input, select, textarea {
 			}
 
 		.icon.style1 {
-			color: #00ffcc;
+			
 		}
 
 		.icon.style2 {
-			color: #00f0ff;
+		
 		}
 
 		.icon.style3 {
-			color: #76ddff;
+	
+		}
+
+		.diamond {
+
+			flex: 0.7;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+
+		}
+
+		.diamond-icon{
+			margin:30px
 		}
 
 /* Image */
@@ -2096,6 +2108,7 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+		text-align: center;
 	}
 
 		.image img {
@@ -2132,6 +2145,20 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
+
+		.picture {
+			margin: 0 auto;
+			border-radius: 50%;
+			width: 100px;
+			height: auto;
+		}
+
+		#link {
+
+			border-bottom: solid 1px;
+
+
+		}
 
 /* List */
 
@@ -2785,15 +2812,21 @@ input, select, textarea {
 
 		}
 
+#rasboop {
+
+	margin: 10px;
+
+}
+
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0 ;
+		padding: 4em 0 4em 0 ;
 	}
 
 		.wrapper > .inner {
 			width: 60em;
-			margin: 0 auto;
+			margin: 10px auto;
 		}
 
 			@media screen and (max-width: 1280px) {
@@ -3140,6 +3173,7 @@ input, select, textarea {
 
 		.wrapper.style4 {
 			background-color: transparent;
+			display: flex;
 		}
 
 		.wrapper.style5 {
@@ -3633,9 +3667,6 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 
-			#banner p a {
-				color: inherit;
-			}
 
 		#banner .more {
 			-moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
@@ -3752,12 +3783,20 @@ input, select, textarea {
 
 /* CTA */
 
+#cta
+{
+	padding: 2em 4em 0.1em 4em;
+}
+
 	#cta .inner {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
 		max-width: 45em;
+		flex: 0.3;
+		display: flex;
+		
 	}
 
 		#cta .inner header {
