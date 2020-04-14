@@ -2109,6 +2109,7 @@ input, select, textarea {
 		display: inline-block;
 		position: relative;
 		text-align: center;
+		padding: 2em;
 	}
 
 		.image img {
